@@ -50,7 +50,7 @@ FRONTEND SETUP:
     - https://nodejs.org/en
     - Verify installation by running npm --version or npx --version => 9.5.1
 2. Clone the Git repo, you should see a directory structure like above
-|
+
 ***Update 4.8.23***
 I have removed the node_modules and .next folders from the git repo and added them to the .gitignore file to improve efficiency, since the node_modules file especially is huuuuge!
 
