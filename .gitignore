@@ -1,0 +1,17 @@
+# gitignore to save on push/pull times!
+
+# Next build dir
+.next
+
+# will vary by user, so not needed after initial pull
+.idea
+
+# Stuff react adds
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+# This is what takes all the space in the repo!
+node_modules
