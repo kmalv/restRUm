@@ -49,7 +49,17 @@ FRONTEND SETUP:
 1. Install Node.js
     - https://nodejs.org/en
     - Verify installation by running npm --version or npx --version => 9.5.1
-2. Clone the Git repo, you should see a directory structure like above 
+2. Clone the Git repo, you should see a directory structure like above
+|
+***Update 4.8.23***
+I have removed the node_modules and .next folders from the git repo and added them to the .gitignore file to improve efficiency, since the node_modules file especially is huuuuge!
+
+If you type `ls` into your terminal while in the `restrumFrontend` folder, and you do not see folders named `node_modules` or get an error when attempting to run **npm run dev**, just do the following step before you do step 3:
+
+3a. Run **npm install* in the restrumFrontend directory. This will set up everything and load the node_modules folders so that everything works.
+
+***let me know if that doesn't work! -Kayla***
+
 3. Run **npm run dev** in the restrum_frontend directory
 4. Navigate to localhost:3000, you should see a Next.js page with the message _Hello Afsana, Kayla, Kenisha, Will :D_ on top
 NOTE: Next.js is a REACT framework for full stack dev. It provides us with certain boilerplates (you can view on localhost:3000) that we can use. If not, we can just delete the code and do a regular REACT frontend. It suuports both. Furthermore it comes with an easy way to deploy on Vercel that will host the application for free upto 1 MIL invocations.
