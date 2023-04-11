@@ -1,1 +1,18 @@
-.DS_Store
+# gitignore to save on push/pull times!
+
+# Next build dir
+.next
+
+# will vary by user, so not needed after initial pull
+.idea
+
+# Stuff react adds
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+# This is what takes all the space in the repo!
+node_modules
+>>>>>>> 67761b367e6c466154488e7fe56c13f7bb33c9da

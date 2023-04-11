@@ -11,6 +11,9 @@ export default function Home() {
         <p>
           Hello Afsana, Kayla, Kenisha, Will :D
         </p>
+        <p>
+          Link to browse page: <a href ="/browse">Here</a>
+        </p>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
