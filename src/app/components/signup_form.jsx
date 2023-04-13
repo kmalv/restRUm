@@ -14,4 +14,4 @@ export default function Signup_Form(){
           <button type="submit" className={styles.button_center}>Submit</button>
         </form>
     );
-}\
+}
