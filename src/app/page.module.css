@@ -7,6 +7,29 @@
   min-height: 100vh;
 }
 
+.form {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  line-height: 2.0;
+}
+
+.heading {
+  position: fixed;
+  padding-top: 50px;
+  left: 50%;
+}
+
+.button_center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
