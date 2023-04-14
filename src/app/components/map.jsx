@@ -1,6 +1,7 @@
 'use client';
 import { useMemo } from "react";
 import { GoogleMap } from "@react-google-maps/api";
+import Box from '@mui/material/Box';
 
 export default function Map() {
     // Sets the center at College Ave
@@ -13,9 +14,10 @@ export default function Map() {
     return (
         <GoogleMap 
             zoom={15} 
-            center= {center} 
+            center={center} 
             mapContainerStyle={containerStyle}
             options={options}>
+            <></>
         </GoogleMap>
     );
 }

@@ -56,7 +56,9 @@ I have removed the node_modules and .next folders from the git repo and added th
 
 If you type `ls` into your terminal while in the `restrumFrontend` folder, and you do not see folders named `node_modules` or get an error when attempting to run **npm run dev**, just do the following step before you do step 3:
 
-3a. Run **npm install* in the restrumFrontend directory. This will set up everything and load the node_modules folders so that everything works.
+3a. Run **npm install* in the restrumFrontend directory. This will set up everything and load the node_modules folders so that everything work.
+
+***Step 3a must be done as per 4/13/23 in order to get MaterialUI and google-maps-react/api npm dependencies installed! If something ever doesn't run properly, just run `npm install` before running `npm run dev` and that wwill usually resolve any needed dependcies.***
 
 ***let me know if that doesn't work! -Kayla***
 

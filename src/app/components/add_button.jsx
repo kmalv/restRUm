@@ -9,28 +9,22 @@ export const ButtonBox = styled(Box)({
 });
 
 export const Button = styled(MUIButton)({
-    textTransform: 'capitalize',
+    textTransform: 'none',
 });
 
-export default function LogSignButtons() {
-    const loginText = "Log In";
-    const signupText = "Sign Up";
+export default function AddBathroomButton() {
+    const text = "Add a Bathroom";
 
-    return (
+    return(
         <Box sx={{ 
             display: 'flex', 
             position: 'fixed', 
-            top: '0',
+            bottom: '0', 
             right: '0',
             zIndex: 'tooltip' }}>
             <ButtonBox>
-                <Button variant="contained" href='/login'>{loginText}</Button>
-            </ButtonBox>
-            <ButtonBox>
-                <Button variant="contained" href='/signup'>{signupText}</Button>
+                <Button variant='contained'>{text}</Button>
             </ButtonBox>
         </Box>
     );
 }
-
-
