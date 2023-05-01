@@ -11,6 +11,7 @@ import Box from '@mui/material/Box';
 export default function Browse() {
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: "AIzaSyChXfJ4hhbLu-8k7JDP3H9BojfpR9SvArc",
+        libraries: ['places']
     });
 
     if (!isLoaded) 
