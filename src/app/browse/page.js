@@ -6,9 +6,20 @@ import LogSignButtons from '../components/log_sign_buttons.jsx';
 import Sidebar from '../components/sidebar.jsx';
 import AddBathroomButton from '../components/add_button.jsx';
 import Box from '@mui/material/Box';
-
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { auth } from '../../firebase';
 
 export default function Browse() {
+
+    // Checks if there is a user logged in
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // User is logged in
+        const uid = user.uid;
+      } else {
+        // User is not logged in
+      }
+    });
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: "AIzaSyChXfJ4hhbLu-8k7JDP3H9BojfpR9SvArc",
         libraries: ['places']

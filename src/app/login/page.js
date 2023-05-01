@@ -63,7 +63,11 @@ export default function LoginForm() {
             <p className={styles.description}>
                   Don't have an account?
                   <a href='/signup'>Sign Up Here</a>
-              </p>
+            </p>
+            <p className={styles.description}>
+                  Wish to browse first?
+                  <a href='/browse'>Browse Here</a>
+            </p>
           </form>
 
         </div>

@@ -106,8 +106,15 @@ export default function SignupForm () {
                     className={styles.button_center}
                 >
                     Sign up
-                </button>
-
+                </button><br/>
+                <p className={styles.description}>
+                      Already have an account?
+                      <a href='/login'>Log In Here</a>
+                </p>
+                <p className={styles.description}>
+                      Wish to browse first?
+                      <a href='/browse'>Browse Here</a>
+                </p>
             </form>
         </div>
     );
