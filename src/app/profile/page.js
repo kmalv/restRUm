@@ -24,6 +24,10 @@ export default function UserProfile () {
             <h1 className={styles.heading}>Your User Profile</h1><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             Email Address:
             <p id="email">(email)</p>
+            <p className={styles.description}>
+                  Wish to browse?
+                  <a href='/browse'>Browse Here</a>
+            </p>
         </div>
     )
 }
