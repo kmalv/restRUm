@@ -1,0 +1,5 @@
+- All members (Will, Afsana, Kenisha, and Kayla) contributed to various aspects of documentation, testing, and design. We kept in daily contact both online and in-person about any design, work distribution, and planning decisions.
+- For version control, we used git and GitHub to host our repository.
+- GitHub displays the exact commits, code contributions, and progress made at each step of the process. Branches were used and later merged as needed. 
+- Kayla: /browse page and functionality
+- Kenisha: /login, /signup, /logout, /profile pages and functionality
