@@ -2,24 +2,28 @@
 
 import styles from '../page.module.css'
 import React, {useState} from 'react';
-import { getAuth } from "firebase/auth";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { auth } from '../../firebase';
 
 export default function UserProfile () {
 
-    const user = auth.currentUser;
-    if (user !== null) {
-      // The user object has basic properties such as display name, email, etc.
-      const displayName = user.displayName;
-      const email = user.email;
-      console.log(displayName);
-      console.log(email);
-    }
+    // Checks if there is a user logged in
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // User is logged in
+        document.getElementById("email").innerHTML = user.email;
+      } else {
+        // User is not logged in
+        console.log("no user");
+      }
+    });
 
     return (
         <div>
             <title>Profile</title>
-            <h1 className={styles.heading}>Your User Profile</h1>
+            <h1 className={styles.heading}>Your User Profile</h1><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            Email Address:
+            <p id="email">(email)</p>
         </div>
     )
 }
