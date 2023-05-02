@@ -10,16 +10,6 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { auth } from '../../firebase';
 
 export default function Browse() {
-
-    // Checks if there is a user logged in
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        // User is logged in
-        const uid = user.uid;
-      } else {
-        // User is not logged in
-      }
-    });
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: "AIzaSyChXfJ4hhbLu-8k7JDP3H9BojfpR9SvArc",
         libraries: ['places']
