@@ -16,3 +16,6 @@ logs
 # This is what takes all the space in the repo!
 node_modules
 >>>>>>> 67761b367e6c466154488e7fe56c13f7bb33c9da
+
+# Hide environment variables
+.env.local

@@ -11,7 +11,7 @@ import { auth } from '../../firebase';
 
 export default function Browse() {
     const { isLoaded } = useLoadScript({
-        googleMapsApiKey: "AIzaSyChXfJ4hhbLu-8k7JDP3H9BojfpR9SvArc",
+        googleMapsApiKey: process.env.MAPS_API_KEY,
         libraries: ['places']
     });
 
