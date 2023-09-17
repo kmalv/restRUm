@@ -9,14 +9,13 @@ import { getAuth } from "firebase/auth";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBxiTkPZkX1nmOhGCRs75z8Ri1ixdvIITo",
-  authDomain: "restrum-86804.firebaseapp.com",
-  databaseURL: "https://restrum-86804-default-rtdb.firebaseio.com",
-  projectId: "restrum-86804",
-  storageBucket: "restrum-86804.appspot.com",
-  messagingSenderId: "557585623398",
-  appId: "1:557585623398:web:75324927aa26b7de4300a7",
-  measurementId: "G-NNRSQB6F7E"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECTID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_SENDERID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APPID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT
 };
 
 // Initialize Firebase
