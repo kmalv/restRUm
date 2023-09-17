@@ -2,19 +2,21 @@
 import { initializeApp } from "firebase/app";
 //import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH,
-  projectId: process.env.FIREBASE_PROJECTID,
-  storageBucket: process.env.FIREBASE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_SENDERID,
-  appId: process.env.FIREBASE_APPID,
-  measurementId: process.env.FIREBASE_MEASUREMENT
+  apiKey: "AIzaSyBxiTkPZkX1nmOhGCRs75z8Ri1ixdvIITo",
+  authDomain: "restrum-86804.firebaseapp.com",
+  databaseURL: "https://restrum-86804-default-rtdb.firebaseio.com",
+  projectId: "restrum-86804",
+  storageBucket: "restrum-86804.appspot.com",
+  messagingSenderId: "557585623398",
+  appId: "1:557585623398:web:75324927aa26b7de4300a7",
+  measurementId: "G-NNRSQB6F7E"
 };
 
 // Initialize Firebase
